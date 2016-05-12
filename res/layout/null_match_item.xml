@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:textAlignment="center"
+    android:gravity="center">
+    <RelativeLayout
+        android:padding="1dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    	<ImageView
+    	    android:id="@+id/image"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:scaleType="centerCrop"
+        	android:maxHeight="500dp"
+        	android:adjustViewBounds="true"
+        />
+    	<ImageButton 
+    	    android:id="@+id/add_image"
+    	    android:layout_width="30dp"
+    	    android:layout_height="30dp"
+    	    android:layout_alignRight="@id/image"
+    	    android:background="@android:color/transparent"
+    	    android:scaleType="fitCenter"
+    	    />
+    	<TextView
+    	    android:id="@+id/add_num"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="30dp"
+    	    android:textSize="6pt"
+    	    android:layout_toLeftOf="@id/add_image"
+    	    android:text=""
+    	    android:textColor="#ff84bc"
+    	    android:textAlignment="center"
+    	    android:gravity="center"
+    	    />
+    	
+    	
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:padding="2dp">
+	    
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#ff84bc" />
+
+    <ImageButton 
+    	    android:id="@+id/down_image"
+    	    android:layout_width="30dp"
+    	    android:layout_height="30dp"
+    	    android:scaleType="fitCenter"
+    	    android:background="@android:color/transparent"
+    	    android:layout_toLeftOf="@+id/down_num"
+    	    
+    	    />
+    <TextView
+        android:id="@+id/down_num"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#ff84bc" 
+        android:text=""
+        android:layout_toLeftOf="@+id/up_image"
+        />
+    <ImageButton 
+    	    android:id="@+id/up_image"
+    	    android:layout_width="30dp"
+    	    android:layout_height="30dp"
+    	    android:scaleType="fitCenter"
+    	    android:background="@android:color/transparent"
+    	    android:layout_toLeftOf="@+id/up_num"
+    	    />
+     <TextView
+        android:id="@+id/up_num"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#ff84bc" 
+        android:text=""
+        android:layout_alignParentRight="true"
+        />
+    </RelativeLayout>
+</LinearLayout>
